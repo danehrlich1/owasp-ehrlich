@@ -43,8 +43,6 @@ Keep in mind that you need to have display_errors off on a production server and
   allow_url_include       = Off
   variables_order         = "GPSE"
   allow_webdav_methods    = Off
-  register_globals        = Off
-  safe_mode               = Off
   session.gc_maxlifetime  = 600
 Allow_url_* prevents LFIs to be easily escalated to RFIs.
 
@@ -68,20 +66,24 @@ It's a good idea to turn it off, if your application is not using file uploads.
 These are dangerous PHP functions. You should disable all that you don't use. 
 
 ====PHP session handling====
-  session.auto_start      = Off
-  session.save_path       = /path/PHP-session/
-  session.name            = myPHPSESSID
-  session.hash_function   = 1
-  session.hash_bits_per_character = 6
-  session.use_trans_sid   = 0
-  session.cookie_domain   = full.qualified.domain.name
-  #session.cookie_path     = /application/path/
-  session.cookie_lifetime = 0
-  session.cookie_secure   = On
-  session.cookie_httponly = 1
-  session.use_only_cookies= 1
-  session.cache_expire    = 30
-  default_socket_timeout  = 60
+  # https://secure.php.net/manual/en/session.configuration.php
+  session.save_path         = /path/PHP-session/
+  session.name              = myPHPSESSID
+  session.auto_start        = Off
+  session.use_trans_sid     = 0
+  session.cookie_domain     = full.qualified.domain.name
+  #session.cookie_path      = /application/path/
+  session.use_strict_mode   = 1
+  session.use_cookies       = 1
+  session.use_only_cookies  = 1
+  session.cookie_lifetime   = 864000  # 4 hours
+  session.cookie_secure     = 1
+  session.cookie_httponly   = 1
+  session.cookie_samesite   = Strict
+  session.cache_expire      = 30  
+  session.sid_length        = 128
+  session.sid_bits_per_character   = 6
+  default_socket_timeout           = 60
 
 It is a good practice to change session.name to something new.
 
