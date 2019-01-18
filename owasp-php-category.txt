@@ -1,0 +1,277 @@
+
+= Main =
+
+{| style="padding: 0;margin:0;margin-top:10px;text-align:left;" |-
+| valign="top"  style="border-right: 1px dotted gray;padding-right:25px;" |
+
+== About ==
+
+There are 1.8 billion websites on the internet today. Nearly 80% are powered by the PHP programming language. Freedom, privacy, security, and protection from totalitarianism are not possible if PHP is insecure. This project seeks to be the clearing house for the best ways of protecting PHP websites, apps, and the data they have. Thank you for reading.
+​
+
+== What Does PHP Security Mean? ==
+
+* CONFIG: Is my configuration secure? E.g. am I using the latest version of PHP? How does my PHP.ini file look?
+* CODEBASE: Is my codebase secure? Am I protecting against SQL injection? Am I protecting against stored XSS attacks?
+* ARCHITECTURE: is the app designed with security in-mind? Do I have good documentation on securing the app? Do I have brute force protection or MFA as available options?
+* INFRASTRUCTURE: is my deployment environment secure? E.g. Have I hardened the web server the application runs on?
+* DEVELOPMENT: Is my development infrastructure secure? E.g. Do I have 2FA on my Github account along with all other developers?
+
+== What Can You Learn Here? ==
+* What is the fastest way to secure my legacy PHP application?
+* What options do I need in my php.ini file for security?
+* What is the proper way to sanitize data in 2019 with PHP?
+* How can I check my dependencies for vulnerabilities?
+* How do you secure the web server running the PHP code?
+* How does one secure phpmyadmin, MySQL, and Postgres databases?
+* How can you harden your WordPress or Drupal site?
+​
+
+
+| valign="top"  style="padding-left:25px;width:200px;border-right: 1px dotted gray;padding-right:25px;" |
+
+== Team ==
+
+Lead: Dan Ehrlich
+
+Please email dan.ehrlich@owasp.org if you would like to help out.
+
+<br/>
+
+== Meta ==
+
+Last Update: 01/2019
+
+<br/>
+
+== Other Resources ==
+
+[https://paragonie.com/blog/2017/12/2018-guide-building-secure-php-software Best 3rd Party PHP Security Guide]
+<br/>
+[https://lists.owasp.org/mailman/listinfo/php-project Mailing List]
+<br/>
+
+
+== Related Projects ==
+
+* [[OWASP_Project|OWASP Project Repository]]
+* [[Language|Languages Repository]]
+* [[PHP|PHP]]
+* [[Perl|Perl]]
+* [[Python|Python]]
+* [[JavaScript|JavaScript]]
+* [[C/C++|C/C++]]
+* [[SQL|SQL, PL/SQL, DB Scripting]]
+
+|}
+
+=PHP Security Overview=
+
+It is not easy to produce a PHP application without security vulnerabilities. Most application security [[:Category:Vulnerability|vulnerabilities]] apply to PHP applications just like other environments.
+
+The goals of this project are to provide information about building, configuring, deploying, operating, and maintaining secure PHP applications
+
+; [[PHP Security for Developers]]
+: * This section covers dangerous calls and common vulnerabilities associated with them, such as system() exec(), eval() and so on. This section will also cover standard security mechanisms available in the standard language, such as cryptography, logging, encryption, and error handling. Securing elements of an application, such as controllers, business logic, and persistence layers will be covered. We'll discuss handling request parameters, encoding, injection, and more.
+: * CONFIG
+: * CODEBASE
+
+; [[PHP Security for DevSecOps]]
+: * How to secure a PHP application when running on the major cloud providers. How to secure a PHP application if all you've got is an unmanaged Linux server. Harden web server, harden database, and various network defenses such as WAFs, GeoIP, and DNSBL.
+: * How to secure the development environment. Do you have control over the Source code repository? Are commits signed? How do you know which Docker Images to trust? Do you scan containers for vulnerabilities?
+: * INFRASTRUCTURE
+: * DEVELOPMENT
+
+; [[PHP Security for Software Architects]]
+: * Provides information about the design and architectural considerations for a PHP web application.  Which frameworks to use, which frameworks are dead, and using the various FIGs.
+: * ARCHITECTURE
+
+= Pages =
+
+
+== Resources ==
+
+[https://github.com/guardrailsio/awesome-php-security Awesome PHP Security]
+
+[https://github.com/paragonie/awesome-appsec Awesome AppSec]
+
+[https://paragonie.com/blog/2017/12/2018-guide-building-secure-php-software Best 3rd Party PHP Security Guide]
+
+[https://github.com/danehrlich1/very-secure-php-ini Secure php.ini Configuration]
+
+<br/>
+
+<br/>
+
+== Libraries ==
+
+[https://github.com/google/recaptcha Google PHP recaptcha]
+<br/>
+
+
+[https://github.com/paragonie/anti-csrf Paragonie Anti-CSRF Library]
+<br/>
+
+[https://github.com/paragonie/password_lock Enhanced BCrypt Encryption]
+<br/>
+
+[https://github.com/paragonie/gpg-mailer PHP GnuPG Emailer]
+<br/>
+
+[https://github.com/paragonie/csp-builder PHP CSP Builder]
+
+<br/>
+
+<br/>
+
+== Documents ==
+
+[[OWASP PHP Top 5]]
+
+
+<br/>
+
+<br/>
+
+== Legacy Pages ==
+
+The pages below are from 2005-2014 when this project was maintained by a different team. These pages have been kept so that no links are broken, and because there might be certain situations, particularly with extremely legacy apps, where their use might be appropriate. THere is great advice below, but be careful, there is also outdated advice as well.
+
+[https://www.owasp.org/index.php/PHP_Security_for_Architects PHP Security for Architects]
+<br/>
+
+[https://www.owasp.org/index.php/PHP_Security_for_Developers PHP Security for Developers]
+<br/>
+
+[https://www.owasp.org/index.php/PHP_Security_for_Deployers PHP Security for Deployers]
+<br/>
+
+<br/>
+
+
+[https://www.owasp.org/index.php/PHP_Configuration_Cheat_Sheet PHP Configuration Cheat Sheet]
+<br/>
+
+[https://www.owasp.org/index.php/PHP_CSRF_Guard PHP CSRF Guard]
+<br/>
+
+[https://www.owasp.org/index.php/Log_Injection Log Injection]
+<br/>
+
+<br/>
+
+[https://www.owasp.org/index.php/Projects/OWASP_PHP_Security_Project OWASP PHP Security Project]
+<br/>
+
+[https://www.owasp.org/index.php/Projects/OWASP_PHP_Security_Project/Roadmap OWASP PHP Security Project Roadmap]
+<br/>
+
+<br/>
+
+[https://www.owasp.org/index.php/Projects/OWASP_RBAC_Project OWASP RBAC Project]
+<br/>
+
+[https://www.owasp.org/index.php/Projects/OWASP_VaultDB_Project OWASP VaultDB Project]
+<br/>
+
+[https://www.owasp.org/index.php/OWASP_PHPRBAC_Project OWASP PHPRBAC Project]
+<br/>
+
+[https://www.owasp.org/index.php/WebGoatPHP OWASP WebGoatPHP]
+<br/>
+
+
+
+<br/>
+
+<br/>
+
+= Get involved =
+
+To get involved join the mailing list: [https://lists.owasp.org/mailman/listinfo/owasp-php OWASP PHP Mailing List]
+
+
+= Related Resources =
+
+{| style="padding:0; margin:0; margin-top:10px; text-align:left; width:100%;" |-
+| valign="top" style="border-right: 1px dotted gray; padding-right:25px; width:30%; float:left;" |
+
+== Mailing List ==
+
+[http://lists.owasp.org/mailman/listinfo/php-project OWASP PHP Project Mailing List]
+
+| valign="top" style="padding-left:25px; width:30%; min-width:30%; border-right:1px dotted gray; padding-right:25px; float:left;" |
+
+== Twitter Feed ==
+
+(none)
+
+
+| valign="top" style="padding-left:25px; width:30%; float:left;" |
+
+== Code Repository ==
+
+(none)
+
+|}
+
+<br>
+
+== PHP Projects Mailing Lists ==
+
+https://lists.owasp.org/pipermail/owasp_php_security_project/
+
+https://lists.owasp.org/pipermail/owasp_phprbac/
+
+<br>
+
+== Related OWASP Resources ==
+
+
+[[OWASP_Project|OWASP Project Repository]]
+
+[[Language|Languages Repository]]
+
+[[OWASP_.NET_Project|.NET Project]]
+
+[[Ruby|Ruby Technology Knowledge Base]]
+
+[[PHP|PHP Technology Knowledge Base]]
+
+[[Perl|Perl Technology Knowledge Base]]
+
+[[Python|Python Technology Knowledge Base]]
+
+[[JavaScript|JavaScript Technology Knowledge Base]]
+
+[[C/C++|C/C++ Technology Knowledge Base]]
+
+[[SQL|SQL, PL/SQL and DB Scripting Technology Knowledge Base]]
+
+
+
+
+= Project Archives =
+
+The previous version of this PHP Project home page is archived here: [[OWASP_PHP_Project_Archive_(03.2015)]]
+
+<br/>
+
+
+
+
+
+
+
+
+
+
+__NOTOC__
+<headertabs />
+
+<br/>
+
+<!-- Wikimedia insert classified items list here -->
+
+[[Category:Technology]]
+[[Category:Language]]
