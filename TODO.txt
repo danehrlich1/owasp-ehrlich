@@ -1,0 +1,7 @@
+1. Fix Project Archives page
+2. Set up actual "Get Involved" page
+3. Fix  missing column on Related Resources page
+4. Strip useful info from old legacy pages?
+5. Better copy on Intro page?
+6. Jessu do the mega work in PHP Security Overview
+7. Find better way to organize "Pages" page
