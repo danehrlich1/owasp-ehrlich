@@ -40,13 +40,13 @@ Please email dan.ehrlich@owasp.org if you would like to help out.
 
 == Meta ==
 
-Last Update: 01/2019
+Last Updated: 01/2019
 
 <br/>
 
 == Other Resources ==
 
-[https://paragonie.com/blog/2017/12/2018-guide-building-secure-php-software Best 3rd Party PHP Security Guide]
+[https://paragonie.com/blog/2017/12/2018-guide-building-secure-php-software Ultimate 2018 PHP Security Guide]
 <br/>
 [https://lists.owasp.org/mailman/listinfo/php-project Mailing List]
 <br/>
@@ -64,6 +64,7 @@ Last Update: 01/2019
 * [[SQL|SQL, PL/SQL, DB Scripting]]
 
 |}
+
 
 =PHP Security Overview=
 
@@ -86,8 +87,8 @@ The goals of this project are to provide information about building, configuring
 : * Provides information about the design and architectural considerations for a PHP web application.  Which frameworks to use, which frameworks are dead, and using the various FIGs.
 : * ARCHITECTURE
 
-= Pages =
 
+= Pages =
 
 == Resources ==
 
@@ -107,7 +108,6 @@ The goals of this project are to provide information about building, configuring
 
 [https://github.com/google/recaptcha Google PHP recaptcha]
 <br/>
-
 
 [https://github.com/paragonie/anti-csrf Paragonie Anti-CSRF Library]
 <br/>
@@ -145,9 +145,7 @@ The pages below are from 2005-2014 when this project was maintained by a differe
 
 [https://www.owasp.org/index.php/PHP_Security_for_Deployers PHP Security for Deployers]
 <br/>
-
 <br/>
-
 
 [https://www.owasp.org/index.php/PHP_Configuration_Cheat_Sheet PHP Configuration Cheat Sheet]
 <br/>
@@ -157,7 +155,6 @@ The pages below are from 2005-2014 when this project was maintained by a differe
 
 [https://www.owasp.org/index.php/Log_Injection Log Injection]
 <br/>
-
 <br/>
 
 [https://www.owasp.org/index.php/Projects/OWASP_PHP_Security_Project OWASP PHP Security Project]
@@ -165,7 +162,6 @@ The pages below are from 2005-2014 when this project was maintained by a differe
 
 [https://www.owasp.org/index.php/Projects/OWASP_PHP_Security_Project/Roadmap OWASP PHP Security Project Roadmap]
 <br/>
-
 <br/>
 
 [https://www.owasp.org/index.php/Projects/OWASP_RBAC_Project OWASP RBAC Project]
@@ -179,22 +175,19 @@ The pages below are from 2005-2014 when this project was maintained by a differe
 
 [https://www.owasp.org/index.php/WebGoatPHP OWASP WebGoatPHP]
 <br/>
-
-
-
 <br/>
-
-<br/>
-
-= Get involved =
-
-To get involved join the mailing list: [https://lists.owasp.org/mailman/listinfo/owasp-php OWASP PHP Mailing List]
 
 
 = Related Resources =
 
 {| style="padding:0; margin:0; margin-top:10px; text-align:left; width:100%;" |-
 | valign="top" style="border-right: 1px dotted gray; padding-right:25px; width:30%; float:left;" |
+
+
+= Get involved =
+
+To get involved join the mailing list: [https://lists.owasp.org/mailman/listinfo/owasp-php OWASP PHP Mailing List]
+
 
 == Mailing List ==
 
